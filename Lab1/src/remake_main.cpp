@@ -58,7 +58,7 @@ void one_file_work(string file_path)
     ifstream input_file(file_path, ios::in);
     if(!input_file.is_open())
     {
-        printf("Filed to open file: %s\n", file_path.c_str());
+        // printf("Filed to open file: %s\n", file_path.c_str());
         return;
     }
     init_before_one_round(); 
