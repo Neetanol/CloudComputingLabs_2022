@@ -29,7 +29,7 @@ char puzzle[128];
 
 void init_before_all()
 {
-    ios::sync_with_stdio(false);
+    // ios::sync_with_stdio(false);
     buf = new int* [lim_puzzle];
     is_solved = new bool [lim_puzzle];
     for(int i = 0; i < lim_puzzle; ++i) buf[i] = new int [N];
@@ -55,7 +55,7 @@ void thread_work(const int sta, const int line_num)
 
 void one_file_work(string file_path)
 {
-    // ifstream input_file(file_path, ios::in);
+    ifstream input_file(file_path, ios::in);
     if(!input_file.is_open())
     {
         // printf("Filed to open file: %s\n", file_path.c_str());
