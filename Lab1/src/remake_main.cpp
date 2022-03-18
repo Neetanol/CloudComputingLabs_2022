@@ -55,7 +55,7 @@ void thread_work(const int sta, const int line_num)
 
 void one_file_work(string file_path)
 {
-    ifstream input_file(file_path, ios::in);
+    // ifstream input_file(file_path, ios::in);
     if(!input_file.is_open())
     {
         // printf("Filed to open file: %s\n", file_path.c_str());
